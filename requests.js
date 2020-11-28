@@ -40,6 +40,8 @@ async function makeRequests(){
 
     /* 
     Exemplo do método POST
+    Essa api faz a conversão de um código HTML para pdf. É necessário o uso de uma apiKey, mas
+    o processo de obtenção é simples: basta se cadastrar no endereço https://html2pdf.app
     */
     await axios.post('https://api.html2pdf.app/v1/generate', {
         html: '<h1>Hello world! Test for IFPI</h1>',
